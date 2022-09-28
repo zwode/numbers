@@ -46,4 +46,21 @@ export default {
   font-size: 60px;
   line-height: 75px;
 }
+
+@media (max-width: 768px) {
+  .main-text {
+    font-size: 33px;
+    line-height: 34px;
+  }
+  .main-header {
+    padding: 60px 20px;
+    padding-bottom: 40px;
+  }
+  .header-bg {
+    height: 313px;
+  }
+  .traffic {
+    font-size: 18px;
+  }
+}
 </style>

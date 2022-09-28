@@ -1,3 +1,13 @@
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 425px) {
+  body, html {
+    overflow-x: hidden;
+  }
+}
+
 * {
   transition: all 0.2s ease;
 }
