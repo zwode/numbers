@@ -4,7 +4,7 @@
       <div class="d-flex justify-content-between w-100 nav-container">
         <div class="d-flex justify-content-center px-5 border-left-header">
           <div class="align-self-center">
-            <img src="../assets/img/image.svg">
+            <img src="../assets/img/logo.svg">
           </div>
         </div>
         <div class="d-flex text-white nav-text">
@@ -44,7 +44,7 @@
     <div class="d-lg-none">
       <b-navbar toggleable="lg" type="dark" variant="transparent">
         <b-navbar-brand href="/">
-          <img src="../assets/img/image.svg">
+          <img src="../assets/img/logo.svg">
         </b-navbar-brand>
         <b-navbar-toggle target="nav-collapse">
           <img class="open-block" src="../assets/img/navbutton.svg">
