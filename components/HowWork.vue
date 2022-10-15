@@ -4,7 +4,7 @@
       Принципы работы
     </div>
     <div class="d-flex justify-content-between flex-wrap">
-      <div class="card d-flex">
+      <div class="card d-flex" v-auto-animate>
         <div class="card-body overflow-hidden" :class="{ 'card-height': !isActive, 'h-100': isActive }">
           <img src="../assets/img/worktogether.svg" alt="" width="45px" height="45px" class="card-icon">
           <div class="card-title">

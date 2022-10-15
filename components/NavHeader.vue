@@ -4,7 +4,7 @@
       <div class="d-flex justify-content-between w-100 nav-container">
         <div class="d-flex justify-content-center px-5 border-left-header">
           <div class="align-self-center">
-            <img src="../assets/img/logo.svg">
+            <img src="../assets/img/valp.svg">
           </div>
         </div>
         <div class="d-flex text-white nav-text">
@@ -35,16 +35,21 @@
           </div>
         </div>
         <a>
-          <div class="btn-send w-100 text-black">
+          <b-button v-b-modal.form-send class="btn-send w-100 text-black cursor-pointer">
             Оставить заявку
-          </div>
+          </b-button>
+          <b-modal id="form-send" title="СВЯЗАТЬСЯ С НАМИ" hide-footer>
+            <p class="my-4">
+              <mailer-form />
+            </p>
+          </b-modal>
         </a>
       </div>
     </div>
     <div class="d-lg-none">
       <b-navbar toggleable="lg" type="dark" variant="transparent">
         <b-navbar-brand href="/">
-          <img src="../assets/img/logo.svg">
+          <img src="../assets/img/valp.svg">
         </b-navbar-brand>
         <b-navbar-toggle target="nav-collapse">
           <img class="open-block" src="../assets/img/navbutton.svg">
@@ -58,9 +63,14 @@
             <b-nav-item href="#work">Принципы</b-nav-item>
             <b-nav-item href="#price">Услуги</b-nav-item>
             <b-nav-item href="#contacts">Контакты</b-nav-item>
-            <div class="btn-send w-100 text-black">
+            <b-button v-b-modal.form-send class="btn-send w-100 text-black cursor-pointer">
               Оставить заявку
-            </div>
+            </b-button>
+            <b-modal id="form-send" title="СВЯЗАТЬСЯ С НАМИ" hide-footer>
+              <p class="my-4">
+                <mailer-form />
+              </p>
+            </b-modal>
           </b-navbar-nav>
         </b-collapse>
       </b-navbar>
@@ -69,8 +79,10 @@
 </template>
 
 <script>
+import MailerForm from "./MailerForm";
 export default {
-  name: 'NavHeader'
+  name: 'NavHeader',
+  components: {MailerForm}
 }
 </script>
 
