@@ -63,9 +63,14 @@
             <b-nav-item href="#work">Принципы</b-nav-item>
             <b-nav-item href="#price">Услуги</b-nav-item>
             <b-nav-item href="#contacts">Контакты</b-nav-item>
-            <div class="btn-send w-100 text-black">
+            <b-button v-b-modal.form-send class="btn-send w-100 text-black cursor-pointer">
               Оставить заявку
-            </div>
+            </b-button>
+            <b-modal id="form-send" title="СВЯЗАТЬСЯ С НАМИ" hide-footer>
+              <p class="my-4">
+                <mailer-form />
+              </p>
+            </b-modal>
           </b-navbar-nav>
         </b-collapse>
       </b-navbar>
