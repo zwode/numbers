@@ -1,6 +1,6 @@
 <template>
   <div class="footer-bg" id="contacts">
-    <div class="container footer d-flex justify-content-between text-white">
+    <div class="container footer d-flex justify-content-between text-white d-mob-block">
       <div class="footer-contact">
         <div class="title-contact">
           Telegram
@@ -67,6 +67,23 @@ export default {
 
 .footer-bg {
   background: linear-gradient(114.93deg, rgba(111, 81, 210, 0.35) 0%, rgba(0, 0, 0, 0) 66.44%), linear-gradient(258.39deg, #15185B -6.72%, #000000 100%);
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 15px;
+    font-size: 20px;
+  }
+  .title-contact {
+    margin-bottom: 0;
+    font-size: 20px;
+  }
+  .link-contact {
+    margin-bottom: 25px!important;
+  }
+  .link-contact a {
+    font-size: 26px!important;
+  }
 }
 
 </style>

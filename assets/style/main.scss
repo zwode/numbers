@@ -68,9 +68,23 @@ html {
 }
 
 .header-bg {
-  background: linear-gradient(114.93deg, rgba(111, 81, 210, 0.35) 0%, rgba(0, 0, 0, 0) 66.44%), linear-gradient(258.39deg, #15185B -6.72%, #000000 100%);
+  background: linear-gradient(-45deg, #15185B, #2C5FAB, #6F51D2);
   height: 560px;
+  background-size: 500% 500%;
+  animation: gradient 4s ease infinite;
   width: 100%;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .border-left-header {
@@ -92,7 +106,23 @@ html {
   color: #1F1F1F;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.modal-header {
+  border: 0!important;
+}
+
 .border-header {
   border: 0.5px solid #ffffff;
   opacity: 0.15;
+}
+
+@media (max-width: 425px) {
+  .d-mob-block {
+    display: block!important;
+  }
+
+
 }
