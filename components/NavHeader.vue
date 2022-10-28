@@ -38,11 +38,6 @@
           <b-button v-b-modal.form-send class="btn-send w-100 text-black cursor-pointer">
             Оставить заявку
           </b-button>
-          <b-modal id="form-send" title="СВЯЗАТЬСЯ С НАМИ" hide-footer>
-            <p class="my-4">
-              <mailer-form />
-            </p>
-          </b-modal>
         </a>
       </div>
     </div>
@@ -150,6 +145,11 @@ export default {
   .not-collapsed .close-block {
     display: block!important;
   }
+
+  .btn-send {
+    border-radius: 0!important;
+  }
+
   a {
 
   }
@@ -167,6 +167,14 @@ export default {
       z-index: 999;
     }
 
+    .navbar-brand {
+      padding-top: 0!important;
+    }
+
+    .navbar {
+      padding-top: 0!important;
+    }
+
     .navbar-collapse {
       margin-top: -49px;
       background: #1F1F1F;
@@ -174,6 +182,8 @@ export default {
     }
 
     .btn-send {
+      height: 60px;
+      border-radius: 0;
       margin-left: -19px;
       margin-right: -20px;
       width: 100%;
@@ -181,7 +191,9 @@ export default {
       padding: 10px 0;
       text-align: center;
       position: absolute;
-      bottom: -40px;
+      bottom: -50px;
+      border: 0;
+      border-bottom: 1px solid black;
     }
   }
 </style>
