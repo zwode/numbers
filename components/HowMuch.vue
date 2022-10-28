@@ -11,7 +11,7 @@
         <div class="case-description">
           {{ item.description }}
         </div>
-        <div class="case-button">
+        <div class="case-button cursor-pointer" v-b-modal.form-send>
           <div class="price-button">
             {{ item.price }}
           </div>
@@ -26,7 +26,7 @@
           Созваниваемся и подробно обсуждаем все детали.<br>
           Отправляем на утверждение.
         </div>
-        <div class="custom-button">
+        <div class="custom-button cursor-pointer" v-b-modal.form-send>
           <div class="price-button">
             Обсудить проект
           </div>
