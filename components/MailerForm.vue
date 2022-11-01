@@ -29,6 +29,7 @@
         label-for="input-3"
       >
         <b-form-input
+          v-mask="'+7 (###) ###-##-##'"
           id="input-3"
           name="user_phone"
           placeholder="Телефон"
