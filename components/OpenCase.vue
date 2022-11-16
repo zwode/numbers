@@ -83,7 +83,6 @@ export default {
 .open-case {
   padding: 40px;
   border: 1px solid #000000;
-  max-width: 540px;
   width: 100%;
   margin-top: 30px;
 }

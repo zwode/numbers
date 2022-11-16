@@ -1,7 +1,7 @@
 <template>
-  <div class="block-std" id="case">
+  <div class="block-std container" id="case">
     <div class="block-title">
-      Папки и кейсы
+      Портфолио
     </div>
     <div class="d-flex flex-wrap mob-between">
       <div class="case" @click="openBlock(1)">

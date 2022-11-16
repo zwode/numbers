@@ -5,24 +5,52 @@
     </div>
     <div class="main-header">
       <div>
-        <div class="text-center main-text">
-          <strong>Бизнес меняет</strong><br>
-          <div class="content">
-            <div class="content__container">
-              <ul class="content__container__list">
-                <li class="content__container__list__item">стратегия</li>
-                <li class="content__container__list__item">команда</li>
-                <li class="content__container__list__item">подход</li>
-                <li class="content__container__list__item">принципы</li>
-                <li class="content__container__list__item">мышление</li>
-              </ul>
+        <div class="text-left main-text">
+<!--          <strong>Бизнес меняет</strong><br>-->
+<!--          <div class="content">-->
+<!--            <div class="content__container">-->
+<!--              <ul class="content__container__list">-->
+<!--                <li class="content__container__list__item">стратегия</li>-->
+<!--                <li class="content__container__list__item">команда</li>-->
+<!--                <li class="content__container__list__item">подход</li>-->
+<!--                <li class="content__container__list__item">принципы</li>-->
+<!--                <li class="content__container__list__item">мышление</li>-->
+<!--              </ul>-->
+<!--            </div>-->
+<!--          </div>-->
+          <div>
+            Превращаем<br>
+            трафик из интернета<br>
+            в ваших клиентов<br>
+            <div class="un-header">
+              Команда экспертов в digital маркетинге и интернет трафике в одном флаконе
+            </div>
+            <div class="d-flex">
+              <div class="icon-header">
+                <img src="../assets/img/inst.png" alt="inst">
+              </div>
+              <div class="icon-header">
+                <img src="../assets/img/facebook.png" alt="facebook">
+              </div>
+              <div class="icon-header">
+                <img src="../assets/img/google.png" alt="google">
+              </div>
+              <div class="icon-header">
+                <img src="../assets/img/yandex.png" alt="yandex">
+              </div>
+              <div class="icon-header">
+                <img src="../assets/img/youtube.png" alt="youtube">
+              </div>
+              <div class="icon-header">
+                <img src="../assets/img/vk.png" alt="vk">
+              </div>
+              <div class="icon-header">
+                <img src="../assets/img/mytarget.png" alt="mytarget">
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="traffic align-self-bottom text-white text-center">
-      Трафик агентство для вашего бизнеса
     </div>
   </div>
 </template>
@@ -39,8 +67,26 @@ export default {
 
 <style scoped lang="scss">
 
+.icon-header {
+  margin-right: 20px;
+}
+
+.icon-header img {
+  max-width: 65px;
+  max-height: 65px;
+}
+
+.container {
+  padding-top: 20px;
+}
+
+.un-header {
+  font-size: 20px;
+}
+
 .main-header {
   padding: 100px;
+  padding-top: 30px;
 }
 
 .traffic {
@@ -54,8 +100,8 @@ export default {
 }
 
 .main-text {
-  font-size: 60px;
-  line-height: 75px;
+  font-size: 96px;
+  line-height: 98px;
 }
 
 @media (max-width: 768px) {

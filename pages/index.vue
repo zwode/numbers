@@ -1,8 +1,10 @@
 <template>
   <div>
     <Header />
+    <div class="bg-gradient">
+      <Cases/>
+    </div>
     <div class="container">
-      <Cases />
       <HowWork />
       <HowMuch />
     </div>
