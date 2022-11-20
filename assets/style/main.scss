@@ -12,6 +12,26 @@ html {
   transition: all 0.2s ease;
 }
 
+.hidden {
+  display: none!important;
+}
+
+.custom-dropdown {
+  .btn {
+    background-color: transparent !important;
+    border-color: transparent !important;
+    padding: 0;
+    box-shadow: none !important;
+  }
+  ul {
+    transform: translate3d(0px, 60px, 0px)!important;
+  }
+  .dropdown-menu {
+    right: 0!important;
+    left: auto!important;
+  }
+}
+
 .arrow--l-r {
   width: 1.25rem;
   height: 1.26rem;
@@ -69,7 +89,7 @@ html {
 
 .header-bg {
   background: linear-gradient(-45deg, #15185B, #2C5FAB, #6F51D2);
-  height: 560px;
+  height: 730px;
   background-size: 500% 500%;
   animation: gradient 4s ease infinite;
   width: 100%;
@@ -85,6 +105,10 @@ html {
   100% {
     background-position: 0% 50%;
   }
+}
+
+.bg-gradient {
+  background: linear-gradient(0deg, rgba(14,14,14,0.47102591036414565) 0%, rgba(255,255,255,1) 95%);
 }
 
 .border-left-header {
@@ -103,7 +127,7 @@ html {
   font-size: 36px;
   line-height: 50px;
 
-  color: #1F1F1F;
+  color: #234D97;
 }
 
 .cursor-pointer {

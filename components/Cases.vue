@@ -1,71 +1,21 @@
 <template>
-  <div class="block-std" id="case">
+  <div class="block-std container" id="case">
     <div class="block-title">
-      Папки и кейсы
+      Портфолио
     </div>
     <div class="d-flex flex-wrap mob-between">
-      <div class="case" @click="openBlock(1)">
-        <div class="d-flex justify-content-between">
-          <div>
-            Курсы и образование
+      <div class="case" v-for="(inCase, index) in caseText" @click="openBlock(index + 1)">
+        <div class="d-flex">
+          <div class="mr-4 align-self-center">
+            <img src="../assets/img/arrow-right.svg">
           </div>
-          <div>
-            <img src="../assets/img/plus.svg">
-          </div>
-        </div>
-      </div>
-      <div class="case" @click="openBlock(2)">
-        <div class="d-flex justify-content-between">
-          <div>
-            Ремонт и строительство
-          </div>
-          <div>
-            <img src="../assets/img/plus.svg">
-          </div>
-        </div>
-      </div>
-      <div class="case" @click="openBlock(3)">
-        <div class="d-flex justify-content-between">
-          <div>
-            IT продукты и сервисы
-          </div>
-          <div>
-            <img src="../assets/img/plus.svg">
-          </div>
-        </div>
-      </div>
-      <div class="case" @click="openBlock(4)">
-        <div class="d-flex justify-content-between">
-          <div>
-            E-commerce
-          </div>
-          <div>
-            <img src="../assets/img/plus.svg">
-          </div>
-        </div>
-      </div>
-      <div class="case" @click="openBlock(5)">
-        <div class="d-flex justify-content-between">
-          <div>
-            Оффлайн коммерция
-          </div>
-          <div>
-            <img src="../assets/img/plus.svg">
-          </div>
-        </div>
-      </div>
-      <div class="case" @click="openBlock(6)">
-        <div class="d-flex justify-content-between">
-          <div>
-            Банки
-          </div>
-          <div>
-            <img src="../assets/img/plus.svg">
+          <div class="case-text">
+            {{ inCase.text }}
           </div>
         </div>
       </div>
     </div>
-    <div class="cases animation-open">
+    <div class="cases">
       <OpenCase :block="numberCase"/>
     </div>
   </div>
@@ -77,10 +27,33 @@ export default {
   name: 'Case',
   data() {
     return {
-      numberCase: null
+      numberCase: 1,
+      caseText: [
+        {
+          text: 'Курсы и образование'
+        },
+        {
+          text: 'Ремонт и строительство'
+        },
+        {
+          text: 'IT- продукты и сервисы'
+        },
+        {
+          text: 'E-commerce'
+        },
+        {
+          text: 'Офлайн комммерция'
+        },
+        {
+          text: 'Банки'
+        }
+      ]
     }
   },
-  components: {OpenCase},
+  components: { OpenCase },
+  mounted() {
+    document.querySelector('.case').classList.add('active-case')
+  },
   methods: {
     openBlock (index) {
       document.querySelector('.cases').classList.add('animation-open')
@@ -101,23 +74,29 @@ export default {
   cursor: pointer;
   margin-bottom: 30px;
   margin-right: 30px;
-  border: 1px solid #4c4c4c;
-  padding: 20px;
-  min-width: 350px;
+  border: 1px solid transparent;
+  padding: 15px;
   color: #000;
   background: #fff;
+  border-radius: 15px;
 }
 
 .case:hover {
-  background: linear-gradient(114.93deg, rgba(111, 81, 210, 0.35) 0%, rgba(0, 0, 0, 0) 66.44%), linear-gradient(258.39deg, #15185B -6.72%, #000000 100%);
   color: #fff;
+  border: 1px solid transparent;
+  background: linear-gradient(94.33deg, #234D97 -12.22%, #7058D0 86.23%);
   img {
     filter: invert(98%) sepia(60%) saturate(0%) hue-rotate(186deg) brightness(108%) contrast(101%);
   }
 }
 
+.case-text {
+  font-size: 20px;
+}
+
 .active-case {
-  background: linear-gradient(114.93deg, rgba(111, 81, 210, 0.35) 0%, rgba(0, 0, 0, 0) 66.44%), linear-gradient(258.39deg, #15185B -6.72%, #000000 100%);
+  border: 1px solid transparent;
+  background: linear-gradient(94.33deg, #234D97 -12.22%, #7058D0 86.23%);
   color: #fff;
   img {
     filter: invert(98%) sepia(60%) saturate(0%) hue-rotate(186deg) brightness(108%) contrast(101%);
@@ -127,11 +106,6 @@ export default {
 .animation-open {
   opacity: 0;
 }
-
-.case:nth-child(3) {
-  margin-right: 0;
-}
-
 
 .case:last-child {
   margin-right: 0;
