@@ -164,6 +164,7 @@ export default {
 
   .nav-border {
     border: 1.5px solid #234D97;
+    background: #234D97;
     border-radius: 20px;
     width: 70%;
     margin: 0 auto;

@@ -3,7 +3,7 @@
     <div class="container">
       <NavHeader />
     </div>
-    <div class="main-header">
+    <div class="main-header container">
       <div>
         <div class="text-left main-text">
 <!--          <strong>Бизнес меняет</strong><br>-->
@@ -85,8 +85,8 @@ export default {
 }
 
 .main-header {
-  padding: 100px;
   padding-top: 30px;
+  padding-bottom: 100px;
 }
 
 .traffic {

@@ -12,6 +12,9 @@ html {
   transition: all 0.2s ease;
 }
 
+.hidden {
+  display: none!important;
+}
 
 .custom-dropdown {
   .btn {
@@ -105,7 +108,7 @@ html {
 }
 
 .bg-gradient {
-  background: linear-gradient(0.42deg, rgba(191, 189, 189, 0.4) 79.55%, rgba(217, 217, 217, 0) 103.03%);
+  background: linear-gradient(0deg, rgba(14,14,14,0.47102591036414565) 0%, rgba(255,255,255,1) 95%);
 }
 
 .border-left-header {
