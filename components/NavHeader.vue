@@ -66,11 +66,11 @@
 <!--            <b-button v-b-modal.form-send class="btn-send w-100 text-black cursor-pointer">-->
 <!--              Оставить заявку-->
 <!--            </b-button>-->
-<!--            <b-modal id="form-send" title="СВЯЗАТЬСЯ С НАМИ" hide-footer>-->
-<!--              <p class="my-4">-->
-<!--                <mailer-form />-->
-<!--              </p>-->
-<!--            </b-modal>-->
+            <b-modal id="form-send" title="СВЯЗАТЬСЯ С НАМИ" hide-footer>
+              <p class="my-4">
+                <mailer-form />
+              </p>
+            </b-modal>
 <!--          </b-navbar-nav>-->
 <!--        </b-collapse>-->
 <!--      </b-navbar>-->
