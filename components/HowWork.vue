@@ -154,4 +154,15 @@ export default {
   align-self: center;
 }
 
+@media (max-width: 425px) {
+  .card-title {
+    margin-bottom: 0!important;
+    font-size: 16px!important;
+  }
+  .card-icon {
+    width: 50px!important;
+    height: 50px!important;
+  }
+}
+
 </style>

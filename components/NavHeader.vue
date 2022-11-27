@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="d-none d-lg-block">
+    <div>
       <div class="d-flex justify-content-between w-100 nav-container">
         <div></div>
         <div class="d-flex justify-content-center px-5 border-left-header">
@@ -46,35 +46,35 @@
         </b-dropdown>
       </div>
     </div>
-    <div class="d-lg-none">
-      <b-navbar toggleable="lg" type="dark" variant="transparent">
-        <b-navbar-brand href="/">
-          <img src="../assets/img/valp.svg">
-        </b-navbar-brand>
-        <b-navbar-toggle target="nav-collapse">
-          <img class="open-block" src="../assets/img/navbutton.svg">
-          <img class="close-block" src="../assets/img/close.svg">
-        </b-navbar-toggle>
+<!--    <div class="d-lg-none">-->
+<!--      <b-navbar toggleable="lg" type="dark" variant="transparent">-->
+<!--        <b-navbar-brand href="/">-->
+<!--          <img src="../assets/img/valp.svg">-->
+<!--        </b-navbar-brand>-->
+<!--        <b-navbar-toggle target="nav-collapse">-->
+<!--          <img class="open-block" src="../assets/img/navbutton.svg">-->
+<!--          <img class="close-block" src="../assets/img/close.svg">-->
+<!--        </b-navbar-toggle>-->
 
-        <b-collapse id="nav-collapse" is-nav>
-          <b-navbar-nav>
-            <b-nav-item href="/">Главная</b-nav-item>
-            <b-nav-item href="#case">Кейсы</b-nav-item>
-            <b-nav-item href="#work">Принципы</b-nav-item>
-            <b-nav-item href="#price">Услуги</b-nav-item>
-            <b-nav-item href="#contacts">Контакты</b-nav-item>
-            <b-button v-b-modal.form-send class="btn-send w-100 text-black cursor-pointer">
-              Оставить заявку
-            </b-button>
+<!--        <b-collapse id="nav-collapse" is-nav>-->
+<!--          <b-navbar-nav>-->
+<!--            <b-nav-item href="/">Главная</b-nav-item>-->
+<!--            <b-nav-item href="#case">Кейсы</b-nav-item>-->
+<!--            <b-nav-item href="#work">Принципы</b-nav-item>-->
+<!--            <b-nav-item href="#price">Услуги</b-nav-item>-->
+<!--            <b-nav-item href="#contacts">Контакты</b-nav-item>-->
+<!--            <b-button v-b-modal.form-send class="btn-send w-100 text-black cursor-pointer">-->
+<!--              Оставить заявку-->
+<!--            </b-button>-->
             <b-modal id="form-send" title="СВЯЗАТЬСЯ С НАМИ" hide-footer>
               <p class="my-4">
                 <mailer-form />
               </p>
             </b-modal>
-          </b-navbar-nav>
-        </b-collapse>
-      </b-navbar>
-    </div>
+<!--          </b-navbar-nav>-->
+<!--        </b-collapse>-->
+<!--      </b-navbar>-->
+<!--    </div>-->
   </div>
 </template>
 
@@ -206,6 +206,11 @@ export default {
       bottom: -50px;
       border: 0;
       border-bottom: 1px solid black;
+    }
+  }
+  @media (max-width: 425px) {
+    img {
+      width: 50px;
     }
   }
 </style>

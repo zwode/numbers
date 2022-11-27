@@ -1,34 +1,38 @@
 <template>
   <div class="footer-bg" id="contacts">
-    <div class="container footer d-flex justify-content-between text-white d-mob-block">
-      <div class="footer-contact">
-        <div class="title-contact">
-          Telegram
-        </div>
-        <div class="link-contact">
-          <a href="t.me/yourtg">
-            t.me/yourtg
-          </a>
-        </div>
+    <div class="container footer d-flex text-white">
+      <div class="footer-main-text">
+        Связаться<br>
+        с нами
       </div>
-      <div class="footer-contact">
-        <div class="title-contact">
-          WhatsApp
+      <div class="footer-link-text">
+        <div class="footer-contact">
+          <div class="link-contact">
+            <a href="info@valp.agency">
+              info@valp.agency
+            </a>
+          </div>
         </div>
-        <div class="link-contact">
-          <a href="web.whatsapp">
-            web.whatsapp
-          </a>
+        <div class="footer-contact">
+          <div class="link-contact">
+            <a href="https://t.me/valikhanp">
+              Написать в Telegram
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="footer-contact">
-        <div class="title-contact">
-          Телефон
+        <div class="footer-contact">
+          <div class="link-contact">
+            <a href="https://api.whatsapp.com/send?phone=77002551996">
+              Написать в Whatsapp
+            </a>
+          </div>
         </div>
-        <div class="link-contact">
-          <a href="tel:+77002551996">
-            +7 700 255 19 96
-          </a>
+        <div class="footer-contact">
+          <div class="link-contact">
+            <a href="tel:+77002551996">
+              +7 700 255 19 96
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -43,6 +47,16 @@ export default {
 
 <style scoped>
 
+.footer-link-text {
+  margin-left: 15%;
+}
+
+.footer-main-text {
+  padding-right: 15%;
+  border-right: 3px solid #fff!important;
+  font-size: 48px;
+}
+
 .footer-contact {
 
 }
@@ -53,7 +67,7 @@ export default {
 }
 
 .link-contact a {
-  font-size: 18px;
+  font-size: 38px;
   color: #ffffff;
 }
 
@@ -66,10 +80,22 @@ export default {
 }
 
 .footer-bg {
-  background: linear-gradient(114.93deg, rgba(111, 81, 210, 0.35) 0%, rgba(0, 0, 0, 0) 66.44%), linear-gradient(258.39deg, #15185B -6.72%, #000000 100%);
+  background: #234D97;
 }
 
 @media (max-width: 768px) {
+  .footer-main-text {
+    padding-right: 15%;
+    font-size: 18px;
+    border-right: 1px solid #fff!important;
+  }
+  .footer-link-text {
+    margin-left: 10%;
+  }
+  .link-contact a {
+    font-size: 14px!important;
+    color: #ffffff;
+  }
   .footer {
     padding: 15px;
     font-size: 20px;
@@ -77,12 +103,6 @@ export default {
   .title-contact {
     margin-bottom: 0;
     font-size: 20px;
-  }
-  .link-contact {
-    margin-bottom: 25px!important;
-  }
-  .link-contact a {
-    font-size: 26px!important;
   }
 }
 

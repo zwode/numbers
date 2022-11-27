@@ -105,6 +105,7 @@ export default {
 }
 
 @media (max-width: 768px) {
+
   .main-text {
     font-size: 33px;
     line-height: 34px;
@@ -240,6 +241,24 @@ export default {
   49.98%,62.64% {transform:translate3d(0,-60%,0);}
   66.64%,79.3% {transform:translate3d(0,-80%,0);}
   83.3%,95.96% {transform:translate3d(0,0%,0);}
+}
+
+@media (max-width: 425px) {
+  .un-header {
+    font-size: 8px;
+    line-height: 16px!important;
+  }
+  .main-header {
+    padding: 5px 20px;
+  }
+  .icon-header {
+    margin-right: 5px;
+  }
+
+  .icon-header img {
+    max-width: 15px;
+    max-height: 15px;
+  }
 }
 
 </style>

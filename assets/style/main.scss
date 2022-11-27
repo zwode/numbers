@@ -134,6 +134,26 @@ html {
   cursor: pointer;
 }
 
+.modal-header .close {
+  color: #ffffff;
+}
+
+.modal-title {
+  color: #fff!important;
+}
+
+.modal-content {
+  background-color: #234D97;
+  .btn-primary {
+    background: #fff;
+    color: #234D97;
+  }
+}
+
+.modal-dialog {
+  margin-top: 10%!important;
+}
+
 .modal-header {
   border: 0!important;
 }
@@ -144,9 +164,23 @@ html {
 }
 
 @media (max-width: 425px) {
+  .modal-dialog {
+    margin-top: 50%!important;
+  }
+  .button-send {
+    padding: 15px 40px!important;
+    font-size: 18px!important;
+    margin-top: 2rem!important;
+  }
+  .block-title {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+  .block-std {
+    padding: 40px 0;
+  }
   .d-mob-block {
     display: block!important;
   }
-
-
 }
