@@ -69,7 +69,7 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
 .case {
   cursor: pointer;
   margin-bottom: 30px;
@@ -115,17 +115,50 @@ export default {
   .case {
     width: 100%;
     min-width: 0;
-    max-width: 160px;
+    margin-right: 10px;
+    max-width: max-content;
     padding: 5px 10px;
     margin-right: 0;
   }
 
   .mob-between {
-    justify-content: space-between;
   }
 
   .case img {
-    display: none;
   }
 }
+
+@media (max-width: 425px) {
+  .open-case-gradient {
+    padding: 25px 60px!important;
+  }
+
+  .open-case {
+    max-width: 350px;
+    display: block!important;
+  }
+  .case-text {
+    align-self: center;
+  }
+
+  .mob-between {
+    padding: 10px;
+  }
+
+  .case {
+    margin-bottom: 10px !important;
+    border-radius: 10px !important;
+    margin-right: 15px;
+    .mr-4 {
+      margin-right: 10px !important;
+    }
+  }
+  .case img {
+    width: 15px;
+  }
+  .case-text {
+    font-size: 10px;
+  }
+}
+
 </style>

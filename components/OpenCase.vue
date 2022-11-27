@@ -153,4 +153,26 @@ li {
   padding: 13px 25px;
   height: 50px;
 }
+
+@media (max-width: 425px) {
+  .open-case-gradient {
+    border-radius: 15px;
+  }
+  .open-case {
+    border-radius: 15px;
+  }
+  .open-case-description {
+    padding: 0 60px;
+
+  }
+
+  li {
+    font-size: 16px;
+  }
+
+  .justify-content-between {
+    justify-content: center!important;
+  }
+}
+
 </style>

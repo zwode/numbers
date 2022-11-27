@@ -144,9 +144,20 @@ html {
 }
 
 @media (max-width: 425px) {
+  .button-send {
+    padding: 15px 40px!important;
+    font-size: 18px!important;
+    margin-top: 2rem!important;
+  }
+  .block-title {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+  .block-std {
+    padding: 40px 0;
+  }
   .d-mob-block {
     display: block!important;
   }
-
-
 }
