@@ -1,8 +1,9 @@
 <template>
   <div class="block-std" id="price">
-    <div class="block-title">
+    <div class="block-title mb-text-align-center">
       Услуги и прайс
     </div>
+    <div class="block-line d-none d-sm-block" />
     <div class="d-flex justify-content-between flex-wrap price-block">
       <img class="w-49 price-svg" style="margin-top: -10px" src="../assets/img/target.svg" alt="" v-b-modal.form-send>
       <img class="w-49 price-svg" src="../assets/img/ads.svg" alt="" v-b-modal.form-send>

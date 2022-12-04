@@ -3,7 +3,7 @@
     <div class="open-case d-flex" v-for="item in cases" v-if="item.block === block">
       <div class="open-case-gradient d-flex justify-content-center" :style="'background:' + item.background">
         <div class="open-case-img">
-          <img :src="item.img" alt="image">
+          <img :src="item.img" alt="image" style="width: 210px;">
         </div>
       </div>
       <div class="open-case-description w-100">
@@ -13,16 +13,6 @@
           </li>
         </ul>
       </div>
-<!--      <a href="#price">-->
-<!--        <div class="case-button">-->
-<!--          <div class="price-button">-->
-<!--            Перейти-->
-<!--          </div>-->
-<!--          <div class="button-arrow">-->
-<!--            <img src="../assets/img/arrow-right.svg">-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </a>-->
     </div>
   </div>
 </template>
@@ -36,13 +26,13 @@ export default {
       cases: [
         {
           img: require('~/assets/img/finmentor.svg'),
-          description: ['1000+ участников в онлайн выставке зарубежного образования', '300+ лидов ежемесячно', 'Помощь в разработке дополнительного сайта'],
+          description: ['200+ участников на платный марафон', '400+ участников на благотворительный марафон', 'Помощь в разработке основного сайта'],
           background: 'linear-gradient(210.46deg, #FFDD33 -1.96%, rgba(0, 163, 76, 0.86) 59.44%, #8AC1F0 115.22%);',
           block: 1
         },
         {
           img: require('../assets/img/InterStudent.png'),
-          description: ['200+ участников на платный марафон', '400+ участников на благотворительный марафон', 'Помощь в разработке основного сайта'],
+          description: ['1000+ участников в онлайн выставке зарубежного образования', '300+ лидов ежемесячно', 'Помощь в разработке дополнительного сайта'],
           background: 'linear-gradient(210.46deg, #D9A763 -1.96%, #283340 59.44%, #8AC1F0 115.22%);',
           block: 1
         },
@@ -110,6 +100,7 @@ li {
 }
 
 .open-case-description {
+  align-self: center;
   padding: 60px;
 }
 .open-case-img {

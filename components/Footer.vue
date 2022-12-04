@@ -52,6 +52,7 @@ export default {
 }
 
 .footer-main-text {
+  max-height: 180px;
   padding-right: 15%;
   border-right: 3px solid #fff!important;
   font-size: 48px;
@@ -85,6 +86,7 @@ export default {
 
 @media (max-width: 768px) {
   .footer-main-text {
+    max-height: 90px!important;
     padding-right: 15%;
     font-size: 18px;
     border-right: 1px solid #fff!important;

@@ -1,9 +1,21 @@
 <template>
   <div class="header-bg text-white">
-    <div class="container">
+    <ul class="circles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <div class="container index-position">
       <NavHeader />
     </div>
-    <div class="main-header container">
+    <div class="main-header container index-position">
       <div>
         <div class="text-left main-text">
 <!--          <strong>Бизнес меняет</strong><br>-->
@@ -27,7 +39,7 @@
             </div>
             <div class="d-flex">
               <div class="icon-header">
-                <img src="../assets/img/inst.png" alt="inst">
+                <img src="../assets/img/inst.svg" alt="inst">
               </div>
               <div class="icon-header">
                 <img src="../assets/img/facebook.png" alt="facebook">
@@ -66,6 +78,142 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
+.circles{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 730px;
+  overflow: hidden;
+}
+
+.circles li{
+  filter: blur(195.5px);
+  opacity: 0.1;
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: #542EEB;;
+  animation: animate 25s linear infinite;
+  bottom: 0px;
+
+}
+
+.circles li:nth-child(1){
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 12s;
+}
+
+
+.circles li:nth-child(2){
+  left: 10%;
+  width: 50px;
+  height: 50px;
+  animation-delay: 12s;
+  animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+  left: 70%;
+  width: 50px;
+  height: 50px;
+  animation-delay: 14s;
+}
+
+.circles li:nth-child(4){
+  left: 40%;
+  width: 60px;
+  background: #7058D0;
+  height: 60px;
+  animation-delay: 10s;
+  animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+  left: 65%;
+  width: 50px;
+  height: 50px;
+  animation-delay: 10s;
+}
+
+.circles li:nth-child(6){
+  left: 75%;
+  width: 110px;
+  background: #7058D0;
+  height: 110px;
+  animation-delay: 12s;
+}
+
+.circles li:nth-child(7){
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  background: #542EEB;;
+  animation-delay: 12s;
+}
+
+.circles li:nth-child(8){
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  background: #542EEB;
+  animation-delay: 12s;
+  animation-duration: 12s;
+}
+
+.circles li:nth-child(9){
+  left: 20%;
+  width: 150px;
+  height: 350px;
+  animation-delay: 12s;
+  animation-duration: 12s;
+}
+
+.circles li:nth-child(10){
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 5s;
+}
+
+
+
+@keyframes animate {
+
+  0%{
+    transform: translateY(0);
+    opacity: 1;
+    border-radius: 0;
+  }
+
+  25% {
+    transform: translateY(-250px) translateX(random(400) + px);
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateY(-500px) translateX(random(100) + px);
+    opacity: 1;
+  }
+
+  75% {
+    transform: translateY(-750px) translateX(random(3000) + px);
+    opacity: 1;
+  }
+
+  100%{
+    transform: translateY(0) translateX(random(1000) + px);
+    opacity: 0;
+    border-radius: 50%;
+  }
+
+}
 
 .icon-header {
   margin-right: 20px;
@@ -244,6 +392,9 @@ export default {
 }
 
 @media (max-width: 425px) {
+  .circles {
+    height: 313px;
+  }
   .un-header {
     font-size: 8px;
     line-height: 16px!important;
