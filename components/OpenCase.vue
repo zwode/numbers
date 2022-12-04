@@ -3,7 +3,7 @@
     <div class="open-case d-flex" v-for="item in cases" v-if="item.block === block">
       <div class="open-case-gradient d-flex justify-content-center" :style="'background:' + item.background">
         <div class="open-case-img">
-          <img :src="item.img" alt="image">
+          <img :src="item.img" alt="image" style="width: 210px;">
         </div>
       </div>
       <div class="open-case-description w-100">
@@ -13,16 +13,6 @@
           </li>
         </ul>
       </div>
-<!--      <a href="#price">-->
-<!--        <div class="case-button">-->
-<!--          <div class="price-button">-->
-<!--            Перейти-->
-<!--          </div>-->
-<!--          <div class="button-arrow">-->
-<!--            <img src="../assets/img/arrow-right.svg">-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </a>-->
     </div>
   </div>
 </template>
@@ -110,6 +100,7 @@ li {
 }
 
 .open-case-description {
+  align-self: center;
   padding: 60px;
 }
 .open-case-img {

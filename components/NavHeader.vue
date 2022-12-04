@@ -14,20 +14,14 @@
           </template>
           <div class="text-black nav-text text-center">
             <div class="nav-link">
-              <a href="/">
-                Главная
-              </a>
-            </div>
-            <div class="nav-border"></div>
-            <div class="nav-link">
               <a href="#case">
-                Кейсы
+                Портфолио
               </a>
             </div>
             <div class="nav-border"></div>
             <div class="nav-link">
               <a href="#work">
-                Принципы
+                Принципы работы
               </a>
             </div>
             <div class="nav-border"></div>
@@ -40,6 +34,12 @@
             <div class="nav-link">
               <a href="#contacts">
                 Контакты
+              </a>
+            </div>
+            <div class="nav-border"></div>
+            <div class="nav-link">
+              <a href="#contacts">
+                Вакансий
               </a>
             </div>
           </div>
@@ -88,7 +88,8 @@ export default {
 
 <style lang="scss" scoped>
   .nav-link a {
-    color: #000!important;
+    color: #234D97!important;
+    font-size: 22px
   }
 
   .text-black {
@@ -154,14 +155,6 @@ export default {
     border-radius: 0!important;
   }
 
-  a {
-
-  }
-
-  .nav-link {
-    color: #fff;
-  }
-
   .nav-border {
     border: 1.5px solid #234D97;
     background: #234D97;
@@ -209,6 +202,9 @@ export default {
     }
   }
   @media (max-width: 425px) {
+    .nav-link a {
+      font-size: 12px;
+    }
     img {
       width: 50px;
     }

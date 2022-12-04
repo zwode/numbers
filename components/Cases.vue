@@ -1,13 +1,14 @@
 <template>
   <div class="block-std container" id="case">
-    <div class="block-title">
+    <div class="block-title mb-padding">
       Портфолио
     </div>
+    <div class="block-line" />
     <div class="d-flex flex-wrap mob-between">
       <div class="case" v-for="(inCase, index) in caseText" @click="openBlock(index + 1)">
         <div class="d-flex">
           <div class="mr-4 align-self-center">
-            <img src="../assets/img/arrow-right.svg">
+            <img src="../assets/img/arrow-case.svg">
           </div>
           <div class="case-text">
             {{ inCase.text }}
@@ -15,7 +16,7 @@
         </div>
       </div>
     </div>
-    <div class="cases">
+    <div class="cases mb-scale-xs">
       <OpenCase :block="numberCase"/>
     </div>
   </div>
@@ -79,6 +80,9 @@ export default {
   color: #000;
   background: #fff;
   border-radius: 15px;
+  img {
+    filter: invert(16%) sepia(91%) saturate(4944%) hue-rotate(253deg) brightness(94%) contrast(97%);
+  }
 }
 
 .case:hover {
@@ -120,7 +124,9 @@ export default {
     padding: 5px 10px;
     margin-right: 0;
   }
-
+  .card {
+    border-radius: 15px!important;
+  }
   .mob-between {
   }
 
@@ -129,6 +135,11 @@ export default {
 }
 
 @media (max-width: 425px) {
+  .mb-scale-xs {
+    transform: scale(0.7);
+    margin-top: -130px;
+    margin-bottom: -130px;
+  }
   .open-case-gradient {
     padding: 25px 60px!important;
   }

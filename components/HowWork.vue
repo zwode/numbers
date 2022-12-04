@@ -3,6 +3,7 @@
     <div class="block-title">
       Принципы работы
     </div>
+    <div class="block-line" />
     <div class="d-flex justify-content-between flex-wrap">
       <div class="card d-flex" @click="isActive = !isActive" :class="{ 'active-card': isActive }">
         <div class="card-body overflow-hidden d-flex" :class="{ 'hidden': isActive }">
@@ -51,7 +52,7 @@
 
       <div class="card d-flex" @click="isActive3 = !isActive3" :class="{ 'active-card': isActive3 }">
         <div class="card-body overflow-hidden d-flex" :class="{ 'hidden': isActive3 }">
-          <img src="../assets/img/proactivantion.svg" alt="" width="45px" height="45px" class="card-icon">
+          <img src="../assets/img/proactivantion.svg" alt="" width="100px" height="100px" class="card-icon">
           <div class="card-title">
             Ответственность<br>
             и проактивность
@@ -128,7 +129,7 @@ export default {
 }
 .card {
   cursor: pointer;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.93) 23.48%, rgba(121, 110, 110, 0) 363.5%);;
+  background: linear-gradient(0deg, rgba(235,234,234,1) 0%, rgba(255,255,255,1) 100%);
   border: 2px solid #234D97;
   border-radius: 30px;
   max-width: 540px;

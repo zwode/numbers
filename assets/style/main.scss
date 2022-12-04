@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Gramatika-Medium';
+  src: url('../font/1099-font.ttf');
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -9,11 +14,21 @@ html {
 }
 
 * {
+  font-family: 'Gramatika-Medium';
   transition: all 0.2s ease;
+}
+
+.index-position {
+  z-index: 1000;
 }
 
 .hidden {
   display: none!important;
+}
+
+
+.dropdown-menu {
+  min-width: 16rem!important;
 }
 
 .custom-dropdown {
@@ -88,10 +103,10 @@ html {
 }
 
 .header-bg {
-  background: linear-gradient(-45deg, #15185B, #2C5FAB, #6F51D2);
+  background: linear-gradient(-45deg, #15185B, #292c7e);
   height: 730px;
   background-size: 500% 500%;
-  animation: gradient 4s ease infinite;
+  animation: gradient 5s ease infinite;
   width: 100%;
 }
 
@@ -107,6 +122,17 @@ html {
   }
 }
 
+.block-line {
+  background: linear-gradient(89.98deg, #234D97 4.69%, rgba(35, 77, 151, 0) 49.98%);
+  transform: rotate(-180deg);
+  height: 6px;
+  border-radius: 6px;
+  position: absolute;
+  width: 100%;
+  left: -50%;
+  top: 175px;
+}
+
 .bg-gradient {
   background: linear-gradient(0deg, rgba(14,14,14,0.47102591036414565) 0%, rgba(255,255,255,1) 95%);
 }
@@ -117,6 +143,7 @@ html {
 }
 
 .block-std {
+  position: relative;
   padding: 100px 0;
   padding-bottom: 0!important;
 }
@@ -164,6 +191,16 @@ html {
 }
 
 @media (max-width: 425px) {
+  .mb-text-align-center {
+    text-align: center;
+  }
+  .mb-padding {
+    padding-left: 15px;
+  }
+  .block-line {
+    top: 95px;
+    height: 4px;
+  }
   .modal-dialog {
     margin-top: 50%!important;
   }
@@ -173,8 +210,7 @@ html {
     margin-top: 2rem!important;
   }
   .block-title {
-    text-align: center;
-    font-size: 26px;
+    font-size: 19px;
     margin-bottom: 15px;
   }
   .block-std {
