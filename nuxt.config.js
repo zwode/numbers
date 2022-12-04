@@ -15,7 +15,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/_nuxt/assets/img/valp.svg' }
+      { rel: 'icon', type: 'image/x-icon', href: '/_nuxt/img/valp.1000b1f.svg' }
     ]
   },
 
