@@ -46,35 +46,11 @@
         </b-dropdown>
       </div>
     </div>
-<!--    <div class="d-lg-none">-->
-<!--      <b-navbar toggleable="lg" type="dark" variant="transparent">-->
-<!--        <b-navbar-brand href="/">-->
-<!--          <img src="../assets/img/valp.svg">-->
-<!--        </b-navbar-brand>-->
-<!--        <b-navbar-toggle target="nav-collapse">-->
-<!--          <img class="open-block" src="../assets/img/navbutton.svg">-->
-<!--          <img class="close-block" src="../assets/img/close.svg">-->
-<!--        </b-navbar-toggle>-->
-
-<!--        <b-collapse id="nav-collapse" is-nav>-->
-<!--          <b-navbar-nav>-->
-<!--            <b-nav-item href="/">Главная</b-nav-item>-->
-<!--            <b-nav-item href="#case">Кейсы</b-nav-item>-->
-<!--            <b-nav-item href="#work">Принципы</b-nav-item>-->
-<!--            <b-nav-item href="#price">Услуги</b-nav-item>-->
-<!--            <b-nav-item href="#contacts">Контакты</b-nav-item>-->
-<!--            <b-button v-b-modal.form-send class="btn-send w-100 text-black cursor-pointer">-->
-<!--              Оставить заявку-->
-<!--            </b-button>-->
-            <b-modal id="form-send" title="СВЯЗАТЬСЯ С НАМИ" hide-footer>
-              <p class="my-4">
-                <mailer-form />
-              </p>
-            </b-modal>
-<!--          </b-navbar-nav>-->
-<!--        </b-collapse>-->
-<!--      </b-navbar>-->
-<!--    </div>-->
+    <b-modal id="form-send" :title-html="modalTitle" hide-footer>
+      <p class="my-4">
+        <mailer-form />
+      </p>
+    </b-modal>
   </div>
 </template>
 
@@ -82,7 +58,14 @@
 import MailerForm from "./MailerForm";
 export default {
   name: 'NavHeader',
-  components: {MailerForm}
+  components: {MailerForm},
+  data() {
+    return {
+      modalTitle: 'Связаться<br>с нами'
+    }
+  },
+  mounted() {
+  }
 }
 </script>
 
