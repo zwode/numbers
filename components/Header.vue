@@ -89,7 +89,7 @@ export default {
 }
 
 .circles li{
-  filter: blur(195.5px);
+  filter: blur(155.5px);
   opacity: 0.1;
   position: absolute;
   display: block;
@@ -106,7 +106,7 @@ export default {
   left: 25%;
   width: 80px;
   height: 80px;
-  animation-delay: 12s;
+  animation-delay: 6s;
 }
 
 
@@ -114,15 +114,15 @@ export default {
   left: 10%;
   width: 50px;
   height: 50px;
-  animation-delay: 12s;
-  animation-duration: 12s;
+  animation-delay: 6s;
+  animation-duration: 6s;
 }
 
 .circles li:nth-child(3){
   left: 70%;
   width: 50px;
   height: 50px;
-  animation-delay: 14s;
+  animation-delay: 6s;
 }
 
 .circles li:nth-child(4){
@@ -130,15 +130,15 @@ export default {
   width: 60px;
   background: #7058D0;
   height: 60px;
-  animation-delay: 10s;
-  animation-duration: 18s;
+  animation-delay: 6s;
+  animation-duration: 6s;
 }
 
 .circles li:nth-child(5){
   left: 65%;
   width: 50px;
   height: 50px;
-  animation-delay: 10s;
+  animation-delay: 6s;
 }
 
 .circles li:nth-child(6){
@@ -146,7 +146,7 @@ export default {
   width: 110px;
   background: #7058D0;
   height: 110px;
-  animation-delay: 12s;
+  animation-delay: 6s;
 }
 
 .circles li:nth-child(7){
@@ -154,7 +154,7 @@ export default {
   width: 150px;
   height: 150px;
   background: #542EEB;;
-  animation-delay: 12s;
+  animation-delay: 6s;
 }
 
 .circles li:nth-child(8){
@@ -163,15 +163,15 @@ export default {
   height: 50px;
   background: #542EEB;
   animation-delay: 12s;
-  animation-duration: 12s;
+  animation-duration: 6s;
 }
 
 .circles li:nth-child(9){
   left: 20%;
   width: 150px;
   height: 350px;
-  animation-delay: 12s;
-  animation-duration: 12s;
+  animation-delay: 6s;
+  animation-duration: 6s;
 }
 
 .circles li:nth-child(10){
