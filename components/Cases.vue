@@ -137,8 +137,8 @@ export default {
 @media (max-width: 425px) {
   .mb-scale-xs {
     transform: scale(0.7);
-    margin-top: -130px;
-    margin-bottom: -130px;
+    margin-top: -90px;
+    margin-bottom: -90px;
   }
   .open-case-gradient {
     padding: 25px 60px!important;
